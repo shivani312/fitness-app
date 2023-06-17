@@ -1,0 +1,95 @@
+.page-wrapper {
+    padding: 0px;
+	min-height: 100vh;
+	margin: 0 0 0 250px;
+	transition: all 0.2s linear;
+
+    .header {
+        min-height: 80px;
+        background-color: $white;
+
+        .action-wrapper {
+            width: 250px;
+
+            .profile {
+                height: 42px;
+                width: 42px;
+                border-radius: 50%;
+                background-color: #82828238;
+            }
+            .notification {
+                height: 42px;
+                width: 42px;
+                border-radius: 50%;
+                
+                .total-notification {
+                    top: 8px;
+                    left:15px;
+                    width: 5px;
+                    height: 5px;
+                    @include padding(3px 0 1px);
+                    user-select: none;
+                }
+            }
+        }
+    }
+}
+
+.sidebar {
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    background-color: $white;
+    overflow-y: auto;
+	box-shadow: 0 0 2px getColor($grey, 200);
+	transition: all 0.2s linear;
+
+    .image-wrapper {
+        height: 45px;
+        width: 45px;
+    }
+
+    .nav-collapse {
+		width: 35px;
+		height: 35px;
+		background-color: #007aff;
+		border-radius: $border-radius-xs 0 0 $border-radius-xs;
+	}
+    // .nav-list {
+    //     li {
+    //         padding: 5px 0px 5px 40px;
+    //         background-color: #007aff;
+    //         .nav-label {
+    //             color: $white;
+    //         }
+    //         .nav-icon  {
+    //             fill: $white;
+    //         }
+    //     }
+    // }
+}
+
+.mini-navbar {
+    .sidebar {
+        width: 80px;
+
+        .image-wrapper {
+            @include marginRight(10px);
+        }
+        .title {
+            display: none;
+        }
+        .nav-list {
+            li {
+                @include paddingLeft(30px);
+            }
+
+            .nav-label {
+                display: none;
+            }
+        }
+    }
+    .page-wrapper {
+        margin: 0 0 0 80px;
+    }
+}

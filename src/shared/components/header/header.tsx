@@ -1,16 +1,29 @@
-/* eslint-disable react/jsx-no-bind */
-import React from 'react';
+import profile from '../../../assets/images/profile-placeholder.png'
 
-import edge360Logo from 'assets/images/edge-360-logo.png';
+import { NotificationIcon } from '../icons/icons';
+
+import fitnessData from '../../../assets/JASONDATA/fitnessData.json';
 
 const Header: React.FC = () => {
+
 	return (
-		<div className='header z-index--100 position--fixed width--full flex justify-content--between align-items--center bg--grey-400'>
-			<div className='header-logo flex ml--35 cursor--pointer'>
-				<img className='logo height--full' src={edge360Logo} alt='/next-edge-logo' />
+		<>
+		<div className="header flex align-items--center justify-content--between">
+			<div className='ml--20'>
+				<p>{`Hello, ${fitnessData.user.name}!`}</p>
+			</div>
+			<div className="action-wrapper flex align-items--center">
+			<div className='notification position--relative flex align-items--center justify-content--center mr--10'>
+				<NotificationIcon className='width--18px fill--grey-600'/>
+				<div className='total-notification position--absolute text--white bg--red border-radius--half flex align-items--center justify-content--center font-size--xxs font--bold'/>
+			</div>
+				<div className='profile flex align-items--center justify-content--center mr--10'>
+					<img src={profile} className='height--full width--full' alt='profile'/>
+				</div>
+				<p>{fitnessData.user.name}</p>
 			</div>
 		</div>
+		</>
 	);
 };
-
 export default Header;

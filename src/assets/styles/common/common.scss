@@ -680,6 +680,10 @@
 	@include paddingTop(25px);
 }
 
+.pt--30 {
+	@include paddingTop(30px);
+}
+
 .pt--70 {
 	@include paddingTop(70px);
 }
@@ -758,6 +762,10 @@
 
 .pl--30 {
 	@include paddingLeft(30px);
+}
+
+.pl--40 {
+	@include paddingLeft(40px);
 }
 
 .pl--50 {
@@ -1251,6 +1259,10 @@
 	fill: $green;
 }
 
+.fill--grey {
+	@include getShadesColorClasses($grey,'fill');;
+}
+
 .stroke--white {
 	stroke: $white;
 }
@@ -1265,6 +1277,10 @@
 
 .bg--white {
 	background-color: $white;
+}
+
+.bg--red {
+	background-color: $red;
 }
 
 .bg--transparent {
@@ -1347,6 +1363,10 @@
 
 .text--green {
 	color: $green;
+}
+
+.text--grey {
+	@include getShadesColorClasses($grey,'color');
 }
 
 .text--success {
