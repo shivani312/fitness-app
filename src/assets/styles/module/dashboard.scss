@@ -1,0 +1,108 @@
+.dashboard-wrapper {
+    height: calc(100vh - 120px);
+    width: calc(100% - 40px);
+    @include padding(20px);
+
+.right-section {
+
+    .avg-section-wrapper {
+        .avg-section {
+            width: 17vw;
+            border-radius: 15px;
+
+            .avg-section-image {
+                height: 40px;
+                width: 40px;
+            }
+        }
+    }
+
+    .chart-section {
+        border-radius: 20px;
+        padding: 10px;
+    }
+}
+
+    .left-section {
+        border-radius: 20px;
+        overflow-y: auto;
+
+        .profile-section {
+            .profile-image {
+                height: 80px;
+                width: 80px;
+            }
+        }
+
+        .user-info {
+            background-color: #0f84d236;
+            border-radius: 10px;
+
+            .info {
+                border-right: 1px solid #00000038;
+                padding: 0px 30px 0px 0px;
+
+                &:last-child {
+                    border-right: none;
+                    padding: 0;
+                }
+            }
+        }
+        .goal-wrapper {
+            background-color: rgb(0 122 255 / 11%);
+            padding: 10px;
+            border-radius: 10px;
+
+            .dot {
+                height: 15px;
+                width: 15px;
+                background-color: #007aff;
+                border-radius: 50%;
+            }
+        }
+        .goal-wrapper-sleep {
+            background-color:rgb(15 209 199 / 14%);
+            padding: 10px;
+            border-radius: 10px;
+
+            .dot-sleep {
+                height: 15px;
+                width: 15px;
+                background-color: #0fd1c7;
+                border-radius: 50%;
+            }
+        }
+        .goal-wrapper-reading {
+            background-color :rgb(153 153 5 / 16%);
+            padding: 10px;
+            border-radius: 10px;
+
+            .dot-reading {
+                height: 15px;
+                width: 15px;
+                background-color: #999905;
+                border-radius: 50%;
+            }
+        }
+
+        .activity-section {
+            .activity-info {
+                border-radius: 10px;
+                border: 1px solid #8080804d;
+                padding: 20px;
+                .activity-image {
+                    height: 50px;
+                    width: 50px;
+                }
+                .view-activity {
+                    height: 42px;
+                    width: 42px;
+
+                    .view-icon {
+                        fill: #797979c2;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 const Activity:React.FC = () => {
     return (
         <div>
-            Coming soon...
+            {/* Coming soon... */}
         </div>
     )
 };

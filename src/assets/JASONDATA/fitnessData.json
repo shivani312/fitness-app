@@ -1,3 +1,4 @@
+
 {
     "user": {
       "id": "123456",
@@ -5,7 +6,15 @@
       "email": "johndoe@example.com",
       "age": 30,
       "height": 180,
-      "weight": 75
+      "weight": 75,
+      "goal": {
+          "weightLoss": 7.9,
+          "sleep": 7,
+          "reading": 0.5
+      },
+      "avg_calories_burned": 2.5,
+      "avg_heart_rate": 120,
+      "avg_step": 4000
     },
     "activities": [
       {

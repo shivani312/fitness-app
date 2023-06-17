@@ -91,5 +91,15 @@
     }
     .page-wrapper {
         margin: 0 0 0 80px;
+
+        .dashboard-wrapper {
+            .right-section {
+                .avg-section-wrapper {
+                    .avg-section {
+                        width: 20vw;
+                    }
+                }
+            }
+        }
     }
 }
