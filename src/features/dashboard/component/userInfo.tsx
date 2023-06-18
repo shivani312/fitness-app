@@ -111,7 +111,7 @@ const UserInfo:React.FC<IProps> = (props) => {
                             </div>
                             <p className='font-size--lg font-semi--bold'>{activity.name}</p>
                             </div>
-                            <div className='view-activity flex align-items--center justify-content--center cursor--pointer' onClick={() => navigate('/activity')}> 
+                            <div className='view-activity flex align-items--center justify-content--center cursor--pointer' onClick={() => navigate(`/activity/${activity.id}`)}> 
                                 <ViewIcon className='view-icon'/>
                             </div>
                         </div>

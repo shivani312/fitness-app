@@ -10,7 +10,7 @@ const App = () => {
         <Layout>
         <Routes>
             <Route path="/dashboard" element={<Dashboard/>} />
-            <Route path="/activity" element={<Activity/>} />
+            <Route path="/activity/:id" element={<Activity/>} />
             <Route path='*' element={<Navigate replace to='/dashboard' />} />
         </Routes>
         </Layout>

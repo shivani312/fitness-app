@@ -33,7 +33,62 @@
           "average": 7.3,
           "best": 6.5
         },
-        "elevation_gain": 80
+        "weight_lifted": {
+          "total": 4000,
+          "average_per_rep": 13.7
+        },
+        "elevation_gain": 80,
+        "weekly_data": [
+          {
+            "date": "2023-06-01",
+            "steps": 8500,
+            "heart_rate": 75,
+            "distance": 4.2,
+            "calories_burned": 500
+          },
+          {
+            "date": "2023-06-02",
+            "steps": 10200,
+            "heart_rate": 80,
+            "distance": 5.1,
+            "calories_burned": 550
+          },
+          {
+            "date": "2023-06-03",
+            "steps": 6800,
+            "heart_rate": 72,
+            "distance": 3.8,
+            "calories_burned": 480
+          },
+          {
+            "date": "2023-06-04",
+            "steps": 11500,
+            "heart_rate": 85,
+            "distance": 6.3,
+            "calories_burned": 600
+          },
+          {
+            "date": "2023-06-05",
+            "steps": 9200,
+            "heart_rate": 78,
+            "distance": 4.9,
+            "calories_burned": 530
+          },
+          {
+            "date": "2023-06-06",
+            "steps": 7600,
+            "heart_rate": 70,
+            "distance": 3.5,
+            "calories_burned": 460
+          },
+          {
+            "date": "2023-06-07",
+            "steps": 12000,
+            "heart_rate": 88,
+            "distance": 6.8,
+            "calories_burned": 620
+          }
+        ]
       },
       {
         "id": "activity_2",
@@ -51,7 +106,62 @@
           "average": 25.5,
           "max": 32.8
         },
-        "elevation_gain": 120
+        "weight_lifted": {
+          "total": 2000,
+          "average_per_rep": 15.7
+        },
+        "elevation_gain": 120,
+        "weekly_data": [
+          {
+            "date": "2023-06-01",
+            "steps": 8500,
+            "heart_rate": 122,
+            "distance": 15.2,
+            "calories_burned": 750
+          },
+          {
+            "date": "2023-06-02",
+            "steps": 7500,
+            "heart_rate": 120,
+            "distance": 12.2,
+            "calories_burned": 700
+          },
+          {
+            "date": "2023-06-03",
+            "steps": 9200,
+            "heart_rate": 130,
+            "distance": 18.7,
+            "calories_burned": 820
+          },
+          {
+            "date": "2023-06-04",
+            "steps": 4200,
+            "heart_rate": 120,
+            "distance": 18.7,
+            "calories_burned": 850
+          },
+          {
+            "date": "2023-06-05",
+            "steps": 6200,
+            "heart_rate": 110,
+            "distance": 13.7,
+            "calories_burned": 550
+          },
+          {
+            "date": "2023-06-06",
+            "steps": 7600,
+            "heart_rate": 120,
+            "distance": 12.5,
+            "calories_burned": 620
+          },
+          {
+            "date": "2023-06-07",
+            "steps": 9600,
+            "heart_rate": 110,
+            "distance": 15.5,
+            "calories_burned": 770
+          }
+        ]
       },
       {
         "id": "activity_3",
@@ -68,10 +178,67 @@
           "sets": 3,
           "average_per_set": 40
         },
+        "steps":10200,
+        "elevation_gain": 7,
+        "pace": {
+          "average":6.3,
+          "best":6.5
+        },
         "weight_lifted": {
           "total": 2000,
           "average_per_rep": 16.7
-        }
+        },
+        "weekly_data": [
+          {
+            "date": "2023-06-01",
+            "steps": 3500,
+            "heart_rate": 120,
+            "distance": 14.2,
+            "calories_burned": 500
+          },
+          {
+            "date": "2023-06-02",
+            "steps": 5500,
+            "heart_rate": 125,
+            "distance": 16.2,
+            "calories_burned": 750
+          },
+          {
+            "date": "2023-06-03",
+            "steps": 7400,
+            "heart_rate": 125,
+            "distance": 16.7,
+            "calories_burned": 520
+          },
+          {
+            "date": "2023-06-04",
+            "steps": 3200,
+            "heart_rate": 110,
+            "distance": 14.7,
+            "calories_burned": 650
+          },
+          {
+            "date": "2023-06-05",
+            "steps": 9800,
+            "heart_rate": 130,
+            "distance": 15.7,
+            "calories_burned": 850
+          },
+          {
+            "date": "2023-06-06",
+            "steps": 8600,
+            "heart_rate": 100,
+            "distance": 13.5,
+            "calories_burned": 820
+          },
+          {
+            "date": "2023-06-07",
+            "steps": 9000,
+            "heart_rate": 100,
+            "distance": 15,
+            "calories_burned": 890
+          }
+        ]
       },
       {
         "id": "activity_4",
@@ -84,8 +251,69 @@
           "average": 125,
           "max": 140
         },
+        "steps":10200,
+        "elevation_gain": 7,
+        "pace": {
+          "average":6.3,
+          "best":6
+        },
+        "weight_lifted": {
+          "total": 1000,
+          "average_per_rep": 17.7
+        },
         "laps": 20,
-        "pool_length": 25
+        "pool_length": 25,
+        "weekly_data": [
+          {
+            "date": "2023-06-01",
+            "steps": 9500,
+            "heart_rate": 90,
+            "distance": 6.2,
+            "calories_burned": 700
+          },
+          {
+            "date": "2023-06-02",
+            "steps": 10200,
+            "heart_rate": 110,
+            "distance": 15.1,
+            "calories_burned": 780
+          },
+          {
+            "date": "2023-06-03",
+            "steps": 7000,
+            "heart_rate": 90,
+            "distance": 13.8,
+            "calories_burned": 580
+          },
+          {
+            "date": "2023-06-04",
+            "steps": 12500,
+            "heart_rate": 95,
+            "distance": 16.3,
+            "calories_burned": 700
+          },
+          {
+            "date": "2023-06-05",
+            "steps": 10200,
+            "heart_rate": 98,
+            "distance": 14.9,
+            "calories_burned": 830
+          },
+          {
+            "date": "2023-06-06",
+            "steps": 7600,
+            "heart_rate": 70,
+            "distance": 3.5,
+            "calories_burned": 460
+          },
+          {
+            "date": "2023-06-07",
+            "steps": 12000,
+            "heart_rate": 98,
+            "distance": 16.8,
+            "calories_burned": 720
+          }
+        ]
       },
       {
         "id": "activity_5",

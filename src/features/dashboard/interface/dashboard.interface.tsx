@@ -40,13 +40,14 @@ export interface IFitnessData {
     pool_length?: number
     strides?: number
     strokes?: number
+    weekly_data?: IWeeklyData[]
   }
   
   export interface IHeartRate {
     average: number
     max: number
   }
-  
+
   export interface IPace {
     average: number
     best: number
@@ -68,3 +69,10 @@ export interface IFitnessData {
     average_per_rep: number
   }
   
+  export interface IWeeklyData {
+    date: string
+    steps: number
+    heart_rate: number
+    distance: number
+    calories_burned: number
+  }

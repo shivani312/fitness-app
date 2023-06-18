@@ -42,7 +42,7 @@ const Layout: React.FC<React.PropsWithChildren> = (props) => {
 			</Link>
 			</li>
 			<li className='mb--20 pl--40' >
-			<Link to='/activity' className='flex align-items--center justify-content--between'>
+			<Link to='/activity/activity_1' className='flex align-items--center justify-content--between'>
 				<div className='flex align-items--center'>
 					<UserIcon className='nav-icon width--18px fill--grey-600'/>
 					<span className='nav-label text--capitalize ml--15 text--grey-400'>
