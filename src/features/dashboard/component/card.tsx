@@ -13,7 +13,7 @@ const Card:React.FC<IProps> = (props) => {
 
     return (
         <div className="avg-section-wrapper mb--20 width--full flex">
-        <div className="avg-section bg--white p--15 mr--10">
+        <div className="avg-section bg--white p--15">
             <div className="flex justify-content--between">
                 <div className="flex flex--column">
             <p className="text--grey-400">Heart Rate</p>
@@ -41,7 +41,7 @@ const Card:React.FC<IProps> = (props) => {
             </div>
             <p className="font-size--xs text--grey-50">kilocalories</p>
         </div>
-        <div className="avg-section bg--white p--15 ml--10">
+        <div className="avg-section bg--white p--15">
             <div className="flex justify-content--between">
                 <div className="flex flex--column">
             <p className="text--grey-400">Step</p>

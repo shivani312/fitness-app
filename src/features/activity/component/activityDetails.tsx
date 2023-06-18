@@ -107,19 +107,19 @@ const {data} = props;
 
 
             </div>
-            <div className='distance-wrapper p--20 mb--20'>
-            <p className='font-size--lg font--bold text--grey-600 mb--10'>Distance</p>
-            <div className='flex align-items--center justify-content--center'>
-                    <Space size={100} wrap>
-                        <Progress type="circle" percent={data.distance} format={(percent) => `${percent} Km`} size={[130, 100]}/>
-                    </Space>
-            </div>
-            </div>
-            <div className='weight-wrapper p--20'>
+            <div className='weight-wrapper p--20 mb--20'>
             <p className='font-size--lg font--bold text--grey-600 mb--10'>Weight Lifted per rep</p>
             <div className='flex align-items--center justify-content--center'>
                     <Space size={100} wrap>
                         <Progress type="circle" percent={data.weight_lifted?.average_per_rep} format={(percent) => `${percent} avg`} size={[130, 100]} strokeColor={'#0fd1c7'}/>
+                    </Space>
+            </div>
+            </div>
+            <div className='distance-wrapper p--20'>
+            <p className='font-size--lg font--bold text--grey-600 mb--10'>Distance</p>
+            <div className='flex align-items--center justify-content--center'>
+                    <Space size={100} wrap>
+                        <Progress type="circle" percent={data.distance} format={(percent) => `${percent} Km`} size={[130, 100]}/>
                     </Space>
             </div>
             </div>

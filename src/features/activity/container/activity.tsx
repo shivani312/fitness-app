@@ -84,14 +84,14 @@ const Activity:React.FC = () => {
             <div className="activity-details flex">
             <div className="right-section width--60 mr--20">
                 <div className="chart-section bg--white p--10 mb--20">
-                <p className="font--bold ml--10">
+                <p className="chart-title font--bold ml--10">
                     {`${activityDetails.name} Activity Statistics`}
                     </p>
                     <Bar data={barChartData} options={barChartOptions}/>
                 </div>
-                <div className="blog bg--white p--20">
+                <div className="blog-wrapper bg--white p--20">
                     <p className="font-size--lg font--bold mb--10">Recent Blog</p>
-                    <div className="flex justify-content--between">
+                    <div className="blog flex justify-content--between">
                         <div className="blog-image">
                             <img src={fitness} alt='blog' className="height--full width--full"/>
                         </div>
