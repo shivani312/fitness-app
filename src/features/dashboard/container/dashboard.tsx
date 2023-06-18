@@ -50,7 +50,7 @@ const Dashboard:React.FC = () => {
         <div className="dashboard-wrapper flex">
             <div className="right-section width--70 mr--20">
                 <Card data={data.user}/>
-                <div className="chart-section flex justify-content--center bg--white flex--column">
+                <div className="chart-section flex justify-content--center bg--white flex--column mb--20">
                     <p className="font--bold ml--10">
                         Fitness Statistics
                     </p>

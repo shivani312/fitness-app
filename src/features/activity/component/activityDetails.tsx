@@ -16,8 +16,6 @@ interface IProps {
 const ActivityDetails:React.FC<IProps> = (props) => {
 const {data} = props;
 
-console.log(data,'data')
-
     return (
         <div className="left-section bg--white width--40 p--20">
             <p className='font-size--lg font--bold text--grey-600 mb--20'>Activity Details</p>

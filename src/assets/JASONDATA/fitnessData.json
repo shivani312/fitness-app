@@ -14,7 +14,10 @@
       },
       "avg_calories_burned": 2.5,
       "avg_heart_rate": 120,
-      "avg_step": 4000
+      "avg_step": 4000,
+      "step_per": 76.9,
+      "heart_rate_per": 67.8,
+      "distance_per": 56.9
     },
     "activities": [
       {

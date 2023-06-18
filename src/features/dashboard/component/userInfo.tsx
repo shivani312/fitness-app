@@ -104,14 +104,14 @@ const UserInfo:React.FC<IProps> = (props) => {
                 activity.map((activity,index) => {
                     if(index < 4) {
                         return (
-                            <div className='activity-info flex align-items--center justify-content--between mb--10' key={index}>
+                            <div className='activity-info flex align-items--center justify-content--between mb--10' key={index} onClick={() => navigate(`/activity/${activity.id}`)}>
                             <div className='flex align-items--center'>
                             <div className='activity-image mr--20'>
                             <img src={ImageMapper[activity.name]} alt='running' className='height--full width--full'/>
                             </div>
                             <p className='font-size--lg font-semi--bold'>{activity.name}</p>
                             </div>
-                            <div className='view-activity flex align-items--center justify-content--center cursor--pointer' onClick={() => navigate(`/activity/${activity.id}`)}> 
+                            <div className='view-activity flex align-items--center justify-content--center cursor--pointer' > 
                                 <ViewIcon className='view-icon'/>
                             </div>
                         </div>
