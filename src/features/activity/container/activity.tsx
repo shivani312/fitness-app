@@ -1,6 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
-import { Bar, Doughnut, Pie } from "react-chartjs-2";
-import { ArcElement, Chart, ChartData, ChartOptions, Tooltip, Colors, ScriptableTooltipContext } from 'chart.js';
+import { Bar} from "react-chartjs-2";
 
 import moment from "moment";
 
