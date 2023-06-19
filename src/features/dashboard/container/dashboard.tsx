@@ -2,14 +2,13 @@ import moment from "moment";
 import { Line } from "react-chartjs-2";
 import "chart.js/auto";
 
-import data from '../../../assets/JASONDATA/fitnessData.json'
+import data from "../../../assets/JASONDATA/fitnessData.json";
 
-import UserInfo from '../component/userInfo';
+import UserInfo from "../component/userInfo";
 import Card from "../component/card";
 
-const Dashboard:React.FC = () => {
-
-     // Prepare the chart data
+const Dashboard: React.FC = () => {
+    // Prepare the chart data
     const chartData = {
         labels: data.activities.map((entry: any) =>
             moment(entry.date).format("MMM DD YY")
@@ -49,16 +48,14 @@ const Dashboard:React.FC = () => {
     return (
         <div className="dashboard-wrapper flex">
             <div className="right-section width--70 mr--20">
-                <Card data={data.user}/>
-                <div className="chart-section flex justify-content--center bg--white flex--column mb--20">
-                    <p className="font--bold ml--10">
-                        Fitness Statistics
-                    </p>
+                <Card data={data.user} />
+                <div className="chart-section flex justify-content--center bg--white flex--column mb--20 p--20">
+                    <p className="font--bold ml--10">Fitness Statistics</p>
                     <Line data={chartData} options={chartOptions} />
                 </div>
             </div>
-            <UserInfo data={data.user} activity={data.activities}/>
+            <UserInfo data={data.user} activity={data.activities} />
         </div>
-    )
-}
+    );
+};
 export default Dashboard;
