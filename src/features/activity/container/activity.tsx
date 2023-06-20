@@ -1,28 +1,33 @@
+import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { Bar} from "react-chartjs-2";
+import { Bar } from "react-chartjs-2";
 import moment from "moment";
 
-import running from '../../../assets/images/running.png';
-import cycling from '../../../assets/images/cycling.png';
-import strength from '../../../assets/images/strength-training.png';
-import swimming from '../../../assets/images/swimming.png';
-import fitness from './../../../assets/images/fitness.png'
+import running from "../../../assets/images/running.png";
+import cycling from "../../../assets/images/cycling.png";
+import strength from "../../../assets/images/strength-training.png";
+import swimming from "../../../assets/images/swimming.png";
+import fitness from "./../../../assets/images/fitness.png";
 import { BackArrowIcon } from "../../../shared/components/icons/icons";
 
-import Data from '../../../assets/JASONDATA/fitnessData.json';
-import { useEffect, useState } from "react";
+import Data from "../../../assets/JASONDATA/fitnessData.json";
 import { IActivity } from "../../dashboard/interface/dashboard.interface";
 import ActivityDetails from "../component/activityDetails";
 
-const Activity:React.FC = () => {
-    const {id} = useParams();
+const Activity: React.FC = () => {
+    const { id } = useParams();
     const navigate = useNavigate();
 
-    const [activityDetails,setActivityDetails] = useState<IActivity>({} as IActivity)
+    const [activityDetails, setActivityDetails] = useState<IActivity>(
+        {} as IActivity
+    );
 
     useEffect(() => {
-        Data && Data.activities?.map((data) => data.id === id && setActivityDetails(data))
-    },[id])
+        Data &&
+            Data.activities?.map(
+                (data) => data.id === id && setActivityDetails(data)
+            );
+    }, [id]);
 
     const barChartData = {
         labels: activityDetails?.weekly_data?.map((entry: any) =>
@@ -60,56 +65,79 @@ const Activity:React.FC = () => {
         },
     };
 
-    const ImageMapper: {[key:string]: string} = {
-        'Running' : running,
-        'Cycling': cycling,
-        'Strength Training': strength,
-        'Swimming': swimming,
-    }
-
+    const ImageMapper: { [key: string]: string } = {
+        Running: running,
+        Cycling: cycling,
+        "Strength Training": strength,
+        Swimming: swimming,
+    };
 
     return (
         <div className="activity-wrapper">
             <div className="back-wrapper flex align-items--center justify-content--between mb--10">
-                <div className="back-arrow flex align-items--center justify-content--center bg--white cursor--pointer" onClick={() => navigate(-1)}>
-                    <BackArrowIcon className="width--18px"/>
+                <div
+                    className="back-arrow flex align-items--center justify-content--center bg--white cursor--pointer"
+                    onClick={() => navigate(-1)}
+                >
+                    <BackArrowIcon className="width--18px" />
                 </div>
                 <div className="flex align-items--center justify-content--center">
-                <div className="logo-wrapper mr--20">
-                    <img src={ImageMapper[activityDetails.name]} alt='logo' className="height--full width--full"/>
-                </div>
-                <p className="font-size--lg font--bold text--grey-600">{activityDetails.name}</p>
+                    <div className="logo-wrapper mr--20">
+                        <img
+                            src={ImageMapper[activityDetails.name]}
+                            alt="logo"
+                            className="height--full width--full"
+                        />
+                    </div>
+                    <p className="font-size--lg font--bold text--grey-600">
+                        {activityDetails.name}
+                    </p>
                 </div>
             </div>
             <div className="activity-details flex">
-            <div className="right-section width--60 mr--20">
-                <div className="chart-section bg--white p--10 mb--20">
-                <p className="chart-title font--bold ml--10">
-                    {`${activityDetails.name} Activity Statistics`}
-                    </p>
-                    <Bar data={barChartData} options={barChartOptions}/>
-                </div>
-                <div className="blog-wrapper bg--white p--20">
-                    <p className="font-size--lg font--bold mb--10">Recent Blog</p>
-                    <div className="blog flex justify-content--between">
-                        <div className="blog-image">
-                            <img src={fitness} alt='blog' className="height--full width--full"/>
-                        </div>
-                        <div className="content width--50 ml--40">
-                            <ul>
-                                <li>Exercise is a celebration of what your body can do, not a punishment for what you ate.</li>
-                                <li>Strength does not come from the physical capacity. It comes from an indomitable will</li>
-                                <li>Fitness is not a destination, it's a way of life.</li>
-                            </ul>
-
+                <div className="right-section width--60 mr--20">
+                    <div className="chart-section bg--white p--10 mb--20">
+                        <p className="chart-title font--bold ml--10">
+                            {`${activityDetails.name} Activity Statistics`}
+                        </p>
+                        <Bar data={barChartData} options={barChartOptions} />
+                    </div>
+                    <div className="blog-wrapper bg--white p--20">
+                        <p className="font-size--lg font--bold mb--10">
+                            Recent Blog
+                        </p>
+                        <div className="blog flex justify-content--between">
+                            <div className="blog-image">
+                                <img
+                                    src={fitness}
+                                    alt="blog"
+                                    className="height--full width--full"
+                                />
+                            </div>
+                            <div className="content width--50 ml--40">
+                                <ul>
+                                    <li>
+                                        Exercise is a celebration of what your
+                                        body can do, not a punishment for what
+                                        you ate.
+                                    </li>
+                                    <li>
+                                        Strength does not come from the physical
+                                        capacity. It comes from an indomitable
+                                        will
+                                    </li>
+                                    <li>
+                                        Fitness is not a destination, it's a way
+                                        of life.
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <ActivityDetails data={activityDetails} />
             </div>
-            <ActivityDetails data={activityDetails}/>
-            </div>
-            
         </div>
-    )
+    );
 };
 export default Activity;
